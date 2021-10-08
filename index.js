@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
     if (req.url == '/') fileUrl = '/index.html';
     else fileUrl = req.url;
 
-    var filePath = path.resolve('./'+fileUrl);
+    var filePath = path.resolve('./'+fileUrl); // SI fileUrl contiend la valeur "/index.html" alors on ne va 
     const fileExt = path.extname(filePath);
 
 
